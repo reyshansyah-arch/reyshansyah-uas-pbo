@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reyshan Syah | Portofolio Premium</title>
+    <title>Reyshan Syah | Portofolio & CV Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -101,6 +101,16 @@
             overflow: hidden;
             z-index: 1;
         }
+
+        .badge {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
     </style>
 </head>
 <body class="relative">
@@ -117,10 +127,10 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-10">
                     <a href="#home" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Beranda</a>
-                    <a href="#about" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Tentang</a>
-                    <a href="#experience" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Portofolio</a>
+                    <a href="#about" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Profil</a>
+                    <a href="#cv" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Pengalaman</a>
                     <a href="#skills" class="hover:text-gold transition-all text-sm font-medium tracking-wide">Keahlian</a>
-                    <a href="#contact" class="bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:bg-gold hover:text-black">Kontak Saya</a>
+                    <a href="#contact" class="bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:bg-gold hover:text-black">Kontak</a>
                 </div>
             </div>
         </div>
@@ -135,21 +145,21 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
                     </span>
-                    Tersedia Untuk Pekerjaan
+                    Tersedia Untuk Kolaborasi
                 </div>
                 <h1 class="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tighter">
-                    Membangun <br> <span class="text-gold" id="typed"></span>
+                    Profil <br> <span class="text-gold" id="typed"></span>
                 </h1>
                 <p class="text-gray-400 text-xl mb-8 max-w-xl leading-relaxed font-light">
-                    Mahasiswa Teknik Informatika Universitas IPWIJA yang berfokus pada infrastruktur IT modern dan manajemen data cerdas.
+                    Menyeimbangkan keahlian administrasi data profesional dengan studi mendalam di bidang <span class="text-white font-medium">Teknik Informatika</span>.
                 </p>
                 
                 <div class="flex flex-wrap gap-5">
-                    <a href="#contact" class="bg-gold text-black px-8 py-4 rounded-2xl font-bold flex items-center gap-3 transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
-                        Hubungi Saya
+                    <a href="#cv" class="bg-gold text-black px-8 py-4 rounded-2xl font-bold flex items-center gap-3 transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+                        Detail CV Saya
                     </a>
-                    <a href="#experience" class="px-8 py-4 rounded-2xl font-bold border border-white/10 hover:border-gold transition-all flex items-center gap-2">
-                        Lihat Proyek <i class="fas fa-arrow-right text-sm"></i>
+                    <a href="mailto:reyshan@email.com" class="px-8 py-4 rounded-2xl font-bold border border-white/10 hover:border-gold transition-all flex items-center gap-2">
+                        Unduh Resume <i class="fas fa-download text-sm ml-2"></i>
                     </a>
                 </div>
             </div>
@@ -157,10 +167,9 @@
             <div class="reveal-right flex justify-center lg:justify-end">
                 <div class="profile-wrapper">
                     <div class="profile-img-container shadow-[0_0_60px_rgba(212,175,55,0.15)]">
-                        <!-- Foto Utama -->
-                        <img src="WhatsApp Image 2026-01-04 at 11.25.35 AM.jpeg" alt="Reyshan Syah" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                        <img src="WhatsApp Image 2026-01-04 at 11.25.35 AM.jpeg" alt="Reyshan Syah" class="w-full h-full object-cover">
                     </div>
-                    <!-- Stats Overlays dengan Foto Kecil -->
+                    <!-- Stats Overlays -->
                     <div class="absolute -left-10 bottom-20 glass-card p-4 rounded-2xl z-20 hidden md:flex items-center gap-3">
                         <div class="w-12 h-12 rounded-xl overflow-hidden border border-gold/30">
                             <img src="WhatsApp Image 2026-01-04 at 11.25.35 AM.jpeg" class="w-full h-full object-cover" alt="Rey Profile">
@@ -170,89 +179,81 @@
                             <div class="text-[10px] text-gray-400 uppercase tracking-widest">Spesialisasi</div>
                         </div>
                     </div>
-                    <div class="absolute -right-6 top-20 glass-card p-4 rounded-2xl z-20 hidden md:block">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-graduation-cap text-gold"></i>
-                            <span class="font-bold">IPWIJA</span>
-                        </div>
-                        <div class="text-[10px] text-gray-400 uppercase tracking-widest mt-1 text-right">Informatika</div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Grid -->
-    <section id="skills" class="py-32 px-6 bg-gradient-to-b from-transparent to-[#080808]">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-black mb-4 section-title relative">Ekosistem Teknologi</h2>
-                <p class="text-gray-500 max-w-lg mx-auto mt-8">Teknologi dan keahlian yang saya gunakan untuk membangun infrastruktur digital yang solid.</p>
+    <!-- Detailed About Section -->
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div class="reveal">
+                <h2 class="text-4xl font-black mb-8 section-title relative inline-block">Ringkasan Profesional</h2>
+                <div class="space-y-6 text-gray-400 leading-relaxed text-lg">
+                    <p>
+                        Sebagai mahasiswa <span class="text-gold">Teknik Informatika di Universitas IPWIJA</span>, saya berkomitmen untuk mengintegrasikan pemahaman teoretis tentang algoritma dan infrastruktur IT ke dalam lingkungan kerja yang nyata.
+                    </p>
+                    <p>
+                        Pengalaman saya di <span class="text-white font-semibold">PT. Suryaraya Rubberindo</span> telah membentuk saya menjadi individu yang detail-oriented, terutama dalam pengelolaan database rekrutmen dan administrasi perkantoran skala industri. Saya memiliki kemampuan adaptasi yang cepat terhadap perangkat lunak baru dan prosedur operasional yang kompleks.
+                    </p>
+                </div>
             </div>
             
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="reveal glass-card p-10 rounded-[2rem] text-center group">
-                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-black transition-all">
-                        <i class="fas fa-network-wired text-3xl"></i>
-                    </div>
-                    <h5 class="font-bold text-lg mb-2">Jaringan</h5>
-                    <p class="text-xs text-gray-500">Mikrotik, Cisco, Infrastruktur LAN</p>
+            <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-bold mb-4 flex items-center gap-3">
+                        <i class="fas fa-eye"></i> Visi
+                    </h4>
+                    <p class="text-sm text-gray-400">Menjadi tenaga ahli IT yang mampu menyederhanakan proses bisnis melalui otomatisasi data dan infrastruktur jaringan yang efisien.</p>
                 </div>
-                <div class="reveal glass-card p-10 rounded-[2rem] text-center group" style="transition-delay: 100ms;">
-                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-black transition-all">
-                        <i class="fas fa-server text-3xl"></i>
-                    </div>
-                    <h5 class="font-bold text-lg mb-2">Admin Sistem</h5>
-                    <p class="text-xs text-gray-500">Manajemen Database & Sistem</p>
-                </div>
-                <div class="reveal glass-card p-10 rounded-[2rem] text-center group" style="transition-delay: 200ms;">
-                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-black transition-all">
-                        <i class="fas fa-code text-3xl"></i>
-                    </div>
-                    <h5 class="font-bold text-lg mb-2">Informatika</h5>
-                    <p class="text-xs text-gray-500">Logika, Web Dev, Algoritma</p>
-                </div>
-                <div class="reveal glass-card p-10 rounded-[2rem] text-center group" style="transition-delay: 300ms;">
-                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-black transition-all">
-                        <i class="fas fa-file-invoice text-3xl"></i>
-                    </div>
-                    <h5 class="font-bold text-lg mb-2">Admin Data</h5>
-                    <p class="text-xs text-gray-500">Data Entry, Office, Pelaporan</p>
+                <div class="glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-bold mb-4 flex items-center gap-3">
+                        <i class="fas fa-bullseye"></i> Misi
+                    </h4>
+                    <p class="text-sm text-gray-400">Terus belajar teknologi terbaru dan memberikan kontribusi maksimal dalam setiap pengelolaan sistem informasi perusahaan.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="py-32 px-6">
+    <!-- Detailed CV/Timeline Section -->
+    <section id="cv" class="py-32 px-6 bg-[#080808]">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-4xl font-black mb-20 text-center"><span class="text-gold italic">Karir</span> & Pendidikan</h3>
+            <h3 class="text-4xl font-black mb-20 text-center">Riwayat <span class="text-gold">Hidup</span></h3>
             
             <div class="relative border-l-2 border-white/5 ml-4 md:ml-0 md:left-1/2">
                 <!-- Pendidikan -->
                 <div class="mb-16 relative">
                     <div class="absolute -left-[9px] md:left-[-9px] top-0 w-4 h-4 rounded-full bg-gold shadow-[0_0_15px_rgba(212,175,55,0.8)]"></div>
                     <div class="ml-10 md:ml-0 md:w-1/2 md:pr-12 md:text-right md:translate-x-[-100%] reveal">
-                        <div class="glass-card p-8 rounded-3xl">
+                        <div class="glass-card p-8 rounded-3xl border-r-4 border-gold">
                             <span class="text-gold font-bold text-xs tracking-widest block mb-2">2024 — SEKARANG</span>
-                            <h4 class="text-xl font-bold mb-1">Universitas IPWIJA</h4>
-                            <p class="text-gray-400 mb-4">S1 - Teknik Informatika</p>
-                            <p class="text-sm text-gray-500 leading-relaxed italic">"Mengembangkan keahlian logika tingkat lanjut dan arsitektur sistem."</p>
+                            <h4 class="text-xl font-bold mb-1">Sarjana Teknik Informatika</h4>
+                            <p class="text-white font-medium mb-4">Universitas IPWIJA</p>
+                            <ul class="text-sm text-gray-400 space-y-2 inline-block text-left">
+                                <li><i class="fas fa-check-circle text-gold mr-2"></i> Algoritma & Pemrograman</li>
+                                <li><i class="fas fa-check-circle text-gold mr-2"></i> Arsitektur Sistem Komputer</li>
+                                <li><i class="fas fa-check-circle text-gold mr-2"></i> Logika Matematika Informatika</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pengalaman -->
+                <!-- Pengalaman Kerja -->
                 <div class="mb-16 relative">
                     <div class="absolute -left-[9px] md:left-[-9px] top-0 w-4 h-4 rounded-full bg-white/20"></div>
                     <div class="ml-10 md:ml-0 md:w-1/2 md:pl-12 reveal">
-                        <div class="glass-card p-8 rounded-3xl">
-                            <span class="text-gray-500 font-bold text-xs tracking-widest block mb-2">OFFICE & REKRUTMEN</span>
-                            <h4 class="text-xl font-bold mb-1">PT. Suryaraya Rubberindo</h4>
-                            <p class="text-gray-400 mb-4">Manajemen Database & Admin</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-white/5 text-[10px] px-2 py-1 rounded-md">Pengarsipan</span>
-                                <span class="bg-white/5 text-[10px] px-2 py-1 rounded-md">Input Database</span>
+                        <div class="glass-card p-8 rounded-3xl border-l-4 border-white/10">
+                            <span class="text-gray-500 font-bold text-xs tracking-widest block mb-2">PENGALAMAN PROFESIONAL</span>
+                            <h4 class="text-xl font-bold mb-1">Admin Office & Database</h4>
+                            <p class="text-white font-medium mb-4">PT. Suryaraya Rubberindo</p>
+                            <div class="space-y-3 text-sm text-gray-400">
+                                <p>Mengelola database rekrutmen karyawan dengan tingkat akurasi tinggi dan efisiensi pelaporan.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="badge">MS Excel Expert</span>
+                                    <span class="badge">Data Entry</span>
+                                    <span class="badge">Administrasi</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -261,59 +262,110 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black mb-4 section-title relative">Keahlian Teknis</h2>
+                <p class="text-gray-500 mt-8">Perpaduan antara keahlian praktis di kantor dan keahlian teknis informatika.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- IT & Networking -->
+                <div class="reveal glass-card p-10 rounded-[2rem] border-t-4 border-gold">
+                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-8 text-gold">
+                        <i class="fas fa-network-wired text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-4">Informatika</h5>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex justify-between"><span>Jaringan Dasar</span> <span class="text-gold">85%</span></li>
+                        <li class="flex justify-between"><span>Struktur Data</span> <span class="text-gold">80%</span></li>
+                        <li class="flex justify-between"><span>Hardware Support</span> <span class="text-gold">90%</span></li>
+                    </ul>
+                </div>
+
+                <!-- Office & Admin -->
+                <div class="reveal glass-card p-10 rounded-[2rem] border-t-4 border-white/10" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-8 text-white">
+                        <i class="fas fa-file-invoice text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-4">Administrasi</h5>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex justify-between"><span>Microsoft Office</span> <span class="text-white">95%</span></li>
+                        <li class="flex justify-between"><span>Database Rekrutmen</span> <span class="text-white">90%</span></li>
+                        <li class="flex justify-between"><span>Penyusunan Laporan</span> <span class="text-white">92%</span></li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="reveal glass-card p-10 rounded-[2rem] border-t-4 border-white/10" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-8 text-white">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-4">Soft Skills</h5>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex justify-between"><span>Problem Solving</span> <span class="text-white">90%</span></li>
+                        <li class="flex justify-between"><span>Kerja Sama Tim</span> <span class="text-white">95%</span></li>
+                        <li class="flex justify-between"><span>Ketelitian</span> <span class="text-white">98%</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
     <footer id="contact" class="py-20 px-6 border-t border-white/5 bg-[#030303]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="text-center md:text-left">
-                <div class="font-black text-2xl tracking-tighter text-gold mb-2">REYSHAN SYAH</div>
-                <p class="text-gray-500 text-sm max-w-xs">Membangun solusi digital dengan semangat dan presisi.</p>
+                <div class="font-black text-2xl tracking-tighter text-gold mb-2 uppercase">REYSHAN SYAH</div>
+                <p class="text-gray-500 text-sm max-w-xs italic">"Membangun kredibilitas melalui data dan teknologi."</p>
             </div>
-            <div class="flex gap-6">
-                <a href="#" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/6281234567890" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:reyshan@email.com" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><i class="far fa-envelope"></i></a>
+            <div class="flex gap-4">
+                <a href="https://wa.me/6281234567890" class="px-6 py-3 bg-white/5 rounded-xl border border-white/10 hover:border-gold hover:text-gold transition-all flex items-center gap-3">
+                    <i class="fab fa-whatsapp"></i> Hubungi via WA
+                </a>
             </div>
-            <div class="text-xs text-gray-600 uppercase tracking-widest">
-                &copy; 2026 Developed with ❤️
+            <div class="text-[10px] text-gray-700 uppercase tracking-[0.2em]">
+                &copy; 2026 Reyshan Syah Professional Profile
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // 1. TYPING EFFECT
+        // Typing Effect
         new Typed('#typed', {
-            strings: ['Solusi.', 'Sistem.', 'Jaringan.', 'Inovasi.'],
+            strings: ['Reyshan Syah.', 'Mahasiswa TI.', 'Profesional Data.'],
             typeSpeed: 60,
             backSpeed: 40,
             loop: true,
-            cursorChar: '_',
+            cursorChar: '|',
         });
 
-        // 2. CURSOR GLOW
+        // Cursor Glow
         const glow = document.getElementById('cursor-glow');
         document.addEventListener('mousemove', (e) => {
             glow.style.left = e.clientX + 'px';
             glow.style.top = e.clientY + 'px';
         });
 
-        // 3. PARTICLES
+        // Particles
         particlesJS('particles-js', {
             particles: {
-                number: { value: 60 },
+                number: { value: 50 },
                 color: { value: '#D4AF37' },
                 shape: { type: 'circle' },
                 opacity: { value: 0.1 },
                 size: { value: 2 },
                 line_linked: { enable: true, distance: 150, color: '#D4AF37', opacity: 0.05, width: 1 },
-                move: { enable: true, speed: 1.5 }
+                move: { enable: true, speed: 1 }
             }
         });
 
-        // 4. SCROLL REVEAL
-        ScrollReveal().reveal('.reveal', { delay: 200, distance: '40px', origin: 'bottom', duration: 1000, easing: 'cubic-bezier(0.5, 0, 0, 1)' });
-        ScrollReveal().reveal('.reveal-left', { delay: 400, distance: '80px', origin: 'left', duration: 1200 });
-        ScrollReveal().reveal('.reveal-right', { delay: 400, distance: '80px', origin: 'right', duration: 1200 });
+        // Scroll Reveal
+        ScrollReveal().reveal('.reveal', { delay: 200, distance: '30px', origin: 'bottom', duration: 800, easing: 'ease-out' });
+        ScrollReveal().reveal('.reveal-left', { delay: 300, distance: '50px', origin: 'left', duration: 1000 });
+        ScrollReveal().reveal('.reveal-right', { delay: 300, distance: '50px', origin: 'right', duration: 1000 });
     </script>
 </body>
 </html>
